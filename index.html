@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Ecológico de Ourinhos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #1e6d43;
+            border-radius: 5px;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .sobre, .fotos, .video, .mapa {
+            margin-bottom: 2rem;
+        }
+
+        .sobre h2, .fotos h2, .video h2, .mapa h2 {
+            font-size: 2rem;
+            color: #2e8b57;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #2e8b57;
+            padding-bottom: 0.5rem;
+        }
+
+        .sobre p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .fotos .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .fotos .galeria img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+    
+
+        .video iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Parque Ecológico</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="https://www.passandoaregua.com.br/images/noticias/0529810001691420198.jpg" alt="Parque Ecológico de Ourinhos">
+        <div class="hero-text">
+            Bem-vindo ao Parque Ecológico de Ourinhos
+        </div>
+    </section>
+
+    <main>
+        <section id="sobre" class="sobre">
+            <h2>Sobre o Parque</h2>
+            <p>O Parque Ecológico de Ourinhos é um local de preservação ambiental, com trilhas ecológicas e uma vasta área verde. Um destino perfeito para quem busca contato com a natureza, além de ser um ponto turístico de grande relevância na cidade. A fauna e a flora diversificadas proporcionam uma experiência única para visitantes de todas as idades.</p>
+        </section>
+
+        <section id="fotos" class="fotos">
+            <h2>Galeria de Fotos</h2>
+            <div class="galeria">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/f9/44/14/trilha-para-caminhada.jpg?w=1200&h=-1&s=1" alt="Trilha para caminhada no Parque Ecológico">
+                <img src="https://s2-redeglobo.glbimg.com/GalDjAOZlh7Lwnpfi1E5MAtSG38=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2018/W/m/NExnIXRb64DrF1FwcLtA/rs634-parque-ecologico.jpg">
+                <img src="https://conteudo.solutudo.com.br/wp-content/uploads/2022/04/parque-7-696x385.png">
+            </div>
+        </section>
+
+        <section class="video">
+            <h2>Vídeo do Parque</h2>
+            <iframe src="https://www.youtube.com/embed/lHgWbU1Vs2k?si=keTWoDjARNioRSkf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section class="mapa">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=exemplo" title="Mapa do Parque Ecológico" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Parque Ecológico de Ourinhos - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
